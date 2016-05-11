@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newark Thrives Program Locator</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico"/>
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css"/>
+	<link rel="stylesheet" href="SlickNav-master/dist/slicknav.min.css"/>
+    <link rel="stylesheet" href="progLoc-css/progLoc_slicknav_style.css"/>
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet/v1.0.0-rc.1/leaflet.js"></script>
+	<script src="SlickNav-master/dist/jquery.slicknav.min.js"></script>
+</head>
+<body link="white">
+    <div id="map"></div>
+    <div id="maptitle">
+        <p> Newark Thrives! Youth Program Locator </p>
+    </div>
+    <div id="layer_selector" class="cartodb-infobox">
+        <ul class="main">
+            <li><input type="checkbox" class="checkbox" value="academic"/>Academic</li>
+            <li><input type="checkbox" class="checkbox" value="arts_and_culture"/>Arts &amp; Culture</li>
+            <li><input type="checkbox" class="checkbox" value="college_readiness"/>College Readiness</li>
+            <li><input type="checkbox" class="checkbox" value="community_service_civic_engagement"/>Community Service &amp; Civic Engagement</li>
+            <li><input type="checkbox" class="checkbox" value="early_education"/>Early Education</li>
+            <li><input type="checkbox" class="checkbox" value="environment"/>Environment</li>
+            <li><input type="checkbox" class="checkbox" value="faith_based_spirituality"/>Faith-Based Spirituality</li>
+            <li><input type="checkbox" class="checkbox" value="health"/>Health</li>
+            <li><input type="checkbox" class="checkbox" value="jobs_career_exploration"/>Jobs, Career &amp; Exploration</li>
+            <li><input type="checkbox" class="checkbox" value="sports_and_recreation"/>Sports &amp; Recreation</li>
+            <li><input type="checkbox" class="checkbox" value="technology_and_media_literacy"/>Technology &amp; Media Literacy</li>
+            <li><input type="checkbox" class="checkbox" value="youth_development"/>Youth Development</li>
+            <li><button class="deselect">Deselect All</button></li>
+        </ul>
+    </div>
+	<div id="recenter_div">
+        <button id="recenter_button">Recenter Map</button>
+    </div>
+	<div id="footer">
+	<footer>
+      <p>Built by No Talent Hack for HackNewark 2016 organized by <a href="http://www.ci.newark.nj.us/brothers-keeper-newark/"> My Brother's Keeper Newark</a>, City of Newark's Office of Information Technology
+      <a href="http://www.codefornewark.org/">Code for Newark,</a> and Newark Thrives!</p>
+    </footer>
+	</div>
+	<script src="progLoc-js/progLoc_checkboxes.js"></script>
+</body>
+</html>
